@@ -1,0 +1,28 @@
+
+SECUENCIA
+----------
+
+Contenidos de la asignatura por semana (aprox):
+
+- 07/09/2026 - UD1 Planificación IG, UD2 Hojas de Estilo - Parte1
+- 14/09/2026 - UD2 Hojas de Estilo - Parte2 y 3
+- 21/09/2026 - UD2 Hojas de Estilo - Parte4 - Posicionamiento y Visibilidad
+- 28/09/2026 - UD2 Hojas de Estilo - Parte5 - Texto, Parte6 - Enlaces Listas Menus, Parte7 - Tablas y Formularios
+- 05/10/2026 - UD2 Hojas de Estilo - Parte8 - Flexbox
+- 12/10/2026 - UD2 Hojas de Estilo - Parte10 - Grid
+- 19/10/2026 - UD2 Hojas de Estilo - Parte9 - Transiciones CSS3
+
+
+Pendiente:
+
+- 16/11/2026 - UD2 Hojas de Estilo Parte 11 - CSS moderno
+
+
+Reto (Fechas Aprox):
+
+- Inicio: 19/10/2026 - Fin 06/11/2026
+
+
+Reto (Fechas Aprox):
+
+- 09/11/2026
