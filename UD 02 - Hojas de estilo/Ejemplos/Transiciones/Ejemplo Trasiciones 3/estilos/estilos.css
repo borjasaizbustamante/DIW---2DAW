@@ -1,0 +1,444 @@
+/*EJEMPLO 1: EJEMPLO DE ANIMACIÓN (UNA VEZ)*/
+#recuadro1{
+  left:30px;
+  position:relative;
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  height:100px;
+  padding:4px;
+  -moz-animation-name: animacion1;
+  -moz-animation-duration: 4s;
+  -webkit-animation-name: animacion1;
+  -webkit-animation-duration: 4s;
+  -o-animation-name: animacion1;
+  -o-animation-duration: 4s;
+   animation-name: animacion1;
+   animation-duration: 4s;
+}
+@keyframes animacion1 {
+    from {
+    left:px;
+    background-color:;
+  }
+  to {
+    left:; 
+    background-color:;
+  }
+}
+
+
+@-moz-keyframes animacion1 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+@-webkit-keyframes animacion1 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+@-o-keyframes animacion1 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+
+body {
+  background:white;
+  margin:50px;
+}
+
+/* EJEMPLO 2:EJEMPLO DE ANIMACIÓN (SE REPITE VARIAS VECES)*/
+
+#recuadro2{
+  left:30px;
+  position:relative;
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  height:100px;
+  padding:4px;
+  -moz-animation-name: animacion2;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: ;
+  -moz-animation-direction: ;
+  -webkit-animation-name: animacion2;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: ;
+  -webkit-animation-direction: ;
+  -o-animation-name: animacion2;
+  -o-animation-duration: 4s;
+  -o-animation-iteration-count: ;
+  -o-animation-direction: ;
+}
+
+@-moz-keyframes animacion2 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+@-webkit-keyframes animacion2 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+@-o-keyframes animacion2 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+/* EJEMPLO 3: EJEMPLO DE ANIMACIÓN LINEAL, infinita y CON RETARDO: se mueve y cambia de color*/
+
+
+#recuadro3{
+  left:30px;
+  position:relative;
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  height:100px;
+  padding:4px;
+  -moz-animation-name: animacion3;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: ;
+  -moz-animation-direction: ;
+  -moz-animation-timing-function: ;
+  -moz-animation-delay: 2s;
+  -webkit-animation-name: animacion3;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: ;
+  -webkit-animation-direction: ;
+  -webkit-animation-timing-function: ;
+  -webkit-animation-delay: 2s;
+  -o-animation-name: animacion3;
+  -o-animation-duration: 4s;
+  -o-animation-iteration-count: ;
+  -o-animation-direction: ;
+  -o-animation-timing-function: ;
+  -o-animation-delay: 2s;
+}
+
+@-moz-keyframes animacion3 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+@-webkit-keyframes animacion3 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+@-o-keyframes animacion3 {
+  from {
+    left:;
+    background-color:#;
+  }
+  to {
+    left:; 
+    background-color:#;
+  }
+}
+
+
+body {
+  background:white;
+  margin:50px;
+}
+
+/*EJEMPLO 4: DE ANIMACIÓN (ANIMACION INICIALMENTE PAUSADA, duracion INFINITA, SE ACIVA AL PASAR CON EL RATON POR ENCIMA)*/
+
+
+#recuadro4{
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:200px;
+  height:100px;
+  padding:8px;
+  -moz-animation-play-state:;
+  -moz-animation-name: animacion4;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: ;
+  -moz-animation-direction: ;
+  -webkit-animation-play-state:;
+  -webkit-animation-name: animacion4;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: ;
+  -webkit-animation-direction: ;
+  -o-animation-play-state:;
+  -o-animation-name: animacion4;
+  -o-animation-duration: 4s;
+  -o-animation-iteration-count: ;
+  -o-animation-direction: ;
+}
+
+#recuadro4:hover {
+  -moz-animation-play-state:;
+  -webkit-animation-play-state:;
+  -o-animation-play-state:;
+}
+
+@-moz-keyframes animacion4 {
+  from {
+    border-radius:;
+    background-color:#ddd;
+  }
+  to {
+    border-radius:;
+    background-color:#ff0;
+  }
+}
+
+
+
+
+@-webkit-keyframes animacion4 {
+  from {
+    border-radius:;
+    background-color:#ddd;
+  }
+  to {
+    border-radius:;
+    background-color:#ff0;
+  }
+}
+
+@-o-keyframes animacion4 {
+  from {
+    border-radius:;
+    background-color:#ddd;
+  }
+  to {
+    border-radius:;
+    background-color:#ff0;
+  }
+}
+
+
+body {
+  background:white;
+  margin:50px;
+}
+
+/*RECUADRO 5: .(VARIOS KEYFRAMES), Infinita, duracion 4segundos*/
+#contenedor{
+width:500px;
+height:400px;
+border:1px solid #ccc;
+
+}
+
+#recuadro5{
+  left:30px;
+  top:30px;
+  position:relative;
+  border-radius: 20px;  
+  background-color:#ddd;
+  width:100px;
+  height:100px;
+  padding:4px;
+  -moz-animation-name: animacion5;
+  -moz-animation-duration: ;
+  -moz-animation-iteration-count: ;
+  -webkit-animation-name: animacion5;
+  -webkit-animation-duration: ;
+  -webkit-animation-iteration-count: ;
+  -o-animation-name: animacion5;
+  -o-animation-duration: ;
+  -o-animation-iteration-count: ;
+}
+
+@-moz-keyframes animacion5 {
+  0%{
+    left:30px;
+    top:30px;
+  }
+  25%{
+    left:300px; 
+    top:30px;
+  }
+  50%{
+    left:300px;
+    top:200px;   
+  }
+  75%{
+    left:30px;
+    top:200px;
+  }
+  100%{
+    left:30px;
+    top:30px;
+  }
+}
+
+@-webkit-keyframes animacion5 {
+  0%{
+    left:30px;
+    top:30px;
+  }
+  25%{
+    left:300px; 
+    top:30px;
+  }
+  50%{
+    left:300px;
+    top:200px;   
+  }
+  75%{
+    left:30px;
+    top:200px;
+  }
+  100%{
+    left:30px;
+    top:30px;
+  }
+}
+
+@-o-keyframes animacion5{
+  0%{
+    left:30px;
+    top:30px;
+  }
+  25%{
+    left:300px; 
+    top:30px;
+  }
+  50%{
+    left:300px;
+    top:200px;   
+  }
+  75%{
+    left:30px;
+    top:200px;
+  }
+  100%{
+    left:30px;
+    top:30px;
+  }
+}
+
+
+body {
+  background:white;
+  margin:50px;
+}
+
+/* EJEMPLO 6:(ANIMANDO IMAGENES) Niño (se repite la imagen?) con yoyo (subir y bajar) en movimiento infinito, 2 segundos de duracion.Direccion en ambos sentidos
+Imagenes en su carpeta*/
+
+div#niño {
+
+    box-shadow: 0 0 15px #000;
+    width: 210px;
+    height: 300px;
+    padding: 0;
+    background: url("../imagenes/nino-yoyo.png")  ; /*Posicion? se repite?*/
+}
+ 
+div#yoyo {
+    padding: 0;
+    background: url("../imagenes/yoyo.png") ; 	/*Posicion? se repite?*/
+    width: 65px;
+    height: 75px;
+    position: relative;
+    right: 100%;
+    left: 145px;
+    top: 100px;
+   -moz-animation-name: animacion6;
+  -moz-animation-duration: ;
+  -moz-animation-iteration-count: ;
+  -moz-animation-direction: ;
+  -webkit-animation-name: animacion6;
+  -webkit-animation-duration: ;
+  -webkit-animation-iteration-count: ;
+  -webkit-animation-direction: ;
+  -o-animation-name: animacion6;
+  -o-animation-duration: ;
+  -o-animation-iteration-count: ;
+  -o-animation-direction: ;
+    
+   
+}
+ 
+
+
+@-moz-keyframes animacion6 {
+  from {
+    height: ;
+  }
+  to {
+    height: ;
+  }
+}
+
+
+
+
+@-webkit-keyframes animacion6 {
+  from {
+     height: ;
+  }
+  to {
+    height: ;
+  }
+}
+
+
+@-o-keyframes animacion6 {
+  from {
+     height: ;
+  }
+  to {
+    height: ;
+  }
+}
+
+
+

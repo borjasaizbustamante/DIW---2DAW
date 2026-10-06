@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transición con Escalado de Tamaño</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      overflow-x: hidden;
+    }
+
+    /* ESTADO INICIAL (Izquierda - Tamaño Normal) */
+    .caja {
+      width: 140px;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      /* Estado base: posición inicial, color original y escala 1 (100% de su tamaño) */
+      transform: translateX(0) scale(1);
+      transform-origin: left center; /* Punto de anclaje para que crezca hacia la derecha */
+      background-color: #3498db;     /* Fondo Azul */
+      color: #ffffff;                /* Texto Blanco */
+
+      /* Transición agrupada para el transform (desplazamiento + escalado) y colores */
+      transition: transform 2s ease-in-out, 
+                  background-color 2s ease-in-out, 
+                  color 2s ease-in-out;
+    }
+
+    /* ESTADO FINAL (Derecha - Tamaño Aumentado) */
+    .caja:hover {
+      /* Se desplaza a la derecha y escala al doble de su tamaño (200%) */
+      transform: translateX(calc(100vw - 320px)) scale(1.8);
+      background-color: #e74c3c;     /* Fondo Rojo */
+      color: #f1c40f;                /* Texto Amarillo */
+    }
+  </style>
+</head>
+<body>
+
+  <p>Pasa el ratón sobre la caja para ver cómo se desplaza, cambia de color y <strong>aumenta progresivamente de tamaño</strong>:</p>
+
+  <div class="caja">
+    Aumentando...
+  </div>
+
+</body>
+</html>

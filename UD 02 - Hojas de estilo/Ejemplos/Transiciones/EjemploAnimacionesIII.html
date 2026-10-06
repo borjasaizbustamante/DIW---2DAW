@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación 5 Puntos con Controles</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      /* Fijamos la altura de la vista para coordinar los puntos */
+      min-height: 90vh;
+      position: relative;
+    }
+
+    /* Panel de controles */
+    .controles {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: opacity 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    #btnIniciar {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    #btnDetener {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    /* RECORRIDO DE 5 PUNTOS CON @KEYFRAMES */
+    @keyframes recorridoCincoPuntos {
+      /* Punto 1: Esquina superior izquierda */
+      0% {
+        transform: translate(0, 80px);
+        background-color: #3498db; /* Azul */
+        color: #ffffff;
+      }
+      /* Punto 2: Esquina superior derecha */
+      25% {
+        transform: translate(calc(100vw - 200px), 80px);
+        background-color: #9b59b6; /* Morado */
+        color: #ffffff;
+      }
+      /* Punto 3: Centro exacto de la pantalla */
+      50% {
+        transform: translate(calc(50vw - 100px), calc(50vh - 30px));
+        background-color: #e67e22; /* Naranja */
+        color: #ffffff;
+      }
+      /* Punto 4: Esquina inferior izquierda */
+      75% {
+        transform: translate(0, calc(100vh - 120px));
+        background-color: #1abc9c; /* Turquesa */
+        color: #ffffff;
+      }
+      /* Punto 5 / Regreso: Esquina inferior derecha (y retorno a P1) */
+      100% {
+        transform: translate(calc(100vw - 200px), calc(100vh - 120px));
+        background-color: #e74c3c; /* Rojo */
+        color: #f1c40f;
+      }
+    }
+
+    /* Estilos de la caja */
+    .caja {
+      width: 140px;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+
+      /* Configuración: 6 segundos para dar tiempo a recorrer los 5 puntos */
+      animation: recorridoCincoPuntos 6s linear infinite alternate;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Panel de control -->
+  <div class="controles">
+    <button id="btnIniciar">Iniciar / Reanudar</button>
+    <button id="btnDetener">Pausar / Detener</button>
+  </div>
+
+  <!-- Caja animada -->
+  <div class="caja" id="miCaja">
+    Caja 5 Puntos
+  </div>
+
+  <script>
+    const caja = document.getElementById('miCaja');
+    const btnIniciar = document.getElementById('btnIniciar');
+    const btnDetener = document.getElementById('btnDetener');
+
+    // Control de la animación
+    btnIniciar.addEventListener('click', () => {
+      caja.style.animationPlayState = 'running';
+    });
+
+    btnDetener.addEventListener('click', () => {
+      caja.style.animationPlayState = 'paused';
+    });
+  </script>
+
+</body>
+</html>

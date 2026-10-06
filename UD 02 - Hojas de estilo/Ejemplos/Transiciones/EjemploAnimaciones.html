@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación Caja en Movimiento</title>
+  <style>
+  
+    /* Estilos del contenedor para limitar la pantalla */
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+
+    /* Regla @keyframes: Define el movimiento y los difuminados de color */
+    @keyframes moverYDifuminar {
+      0% {
+        transform: translateX(0);             		/* Posición inicial (izquierda) */
+        background-color: #3498db;            		/* Fondo Azul */
+        color: #ffffff;                       		/* Texto Blanco */
+      }
+      50% {
+        transform: translateX(calc(100vw - 180px)); /* Posición final (derecha) */
+        background-color: #e74c3c;            		/* Fondo Rojo */
+        color: #f1c40f;                       		/* Texto Amarillo */
+      }
+      100% {
+        transform: translateX(0);             		/* Regreso a posición inicial */
+        background-color: #3498db;            		/* Fondo Azul */
+        color: #ffffff;                       		/* Texto Blanco */
+      }
+    }
+
+    /* Estilos de la caja */
+    .caja {
+      width: 140px;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+      /* Configuración de la animación:
+         - Nombre: moverYDifuminar
+         - Duración: 4 segundos por ciclo completo
+         - Función de tiempo: ease-in-out (suave al acelerar y frenar)
+         - Repetición: infinite (bucle continuo)
+      */
+      animation: moverYDifuminar 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Elemento animado -->
+  <div class="caja">
+    Caja Animada
+  </div>
+
+</body>
+</html>

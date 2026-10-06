@@ -1,0 +1,115 @@
+/* EJEMPLO 1*/
+
+.contenedor{
+width:300px;
+height:275px;
+border: 1px solid #CCC;
+}
+
+
+.Figura{
+width: 100px;
+height:100px;
+border: 1px solid #CCC;
+}
+
+.Figura {
+	opacity: 0.5;
+	background-color: #D2D2D2;
+	color: black;
+}
+.Figura:hover {
+	opacity: 1;
+	background-color: ;
+	-webkit-transform: ;
+	-moz-transform: );
+	-o-transform: );
+	transform: ;
+	-webkit-transition: ;
+	-moz-transition: ;
+	-o-transition: ;
+	transition: ;
+
+}
+
+/* EJEMPLO 2 : Sea mas grande el rectangulo, con una transicion hover ease-out */
+
+#ej-transicion-css{
+    width: 200px;
+    background-color: #C00;
+    color: #fff;
+    margin: auto;
+    padding: 10px;
+    -webkit-transition: ; 
+    -moz-transition: ;
+    -o-transition: ; 
+    transition: ; 
+}
+#ej-transicion-css:hover{
+    width: ;
+    -webkit-transition: ; 
+    -moz-transition: ;
+    -o-transition: ; 
+    transition: ; 
+}	
+
+
+/* EJEMPLO 3: Cambie de color al pasar el raton, pero de forma progresiva*/
+.ejemplo3 a {
+  padding: 5px 10px;
+  background: #9c3;
+  text-decoration:none;
+  color:#fff;
+  }
+.ejemplo3 a:hover {
+  background: #;
+  }
+ 
+.ejemplo3 a {
+  padding: 5px 10px;
+  background: #9c3;
+  -webkit-transition-property: ;
+  -webkit-transition-duration: ;
+  -webkit-transition-timing-function: ;
+  -moz-transition-property: ;
+  -moz-transition-duration: ;
+  -moz-transition-timing-function: ;
+  }
+.ejemplo3 a:hover {
+  background: #;
+  }
+  
+  /* EJEMPLO 4: cambie: altura, anchura y color*/
+ .caja1{
+    margin:10px;
+    border:1px solid #CCC;
+    /* Propiedades a animar */
+    width:100px;
+    height:100px;
+    background-color:#FF0000;
+    /* Final propiedades */
+   -webkit-transition-property: ; 
+   -webkit-transition-duration: ; 
+   -webkit-transition-timing-function: ;
+   -webkit-transition-delay:;
+   -moz-transition-property: ; 
+   -moz-transition-duration: ; 
+   -moz-transition-timing-function: ;
+   -moz-transition-delay:;
+   -o-transition-property: ; 
+   -o-transition-duration: ; 
+   -o-transition-timing-function: ;
+   -o-transition-delay:;
+   transition-property: ; 
+   transition-duration: ; 
+   transition-timing-function: ;
+   transition-delay:;
+}
+ 
+.caja1:hover{
+    width:;
+    height:;
+    background-color:#;
+
+} 
+

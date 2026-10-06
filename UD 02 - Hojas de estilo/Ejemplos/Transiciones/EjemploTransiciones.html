@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transición Sin JS (Con :hover)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      overflow-x: hidden;
+    }
+
+    /* ESTADO INICIAL (Punto A) */
+    .caja {
+      width: 140px;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      /* Estilos base */
+      transform: translateX(0);
+      background-color: #3498db; 			/* Fondo Azul */
+      color: #ffffff;          				/* Texto Blanco */
+
+      /* Configuración de la transición de ida y vuelta */
+      transition: transform 2s ease-in-out, 
+                  background-color 2s ease-in-out, 
+                  color 2s ease-in-out;
+    }
+
+    /* ESTADO FINAL (Punto B): Se activa al pasar el ratón */
+    .caja:hover {
+      transform: translateX(calc(100vw - 180px));
+      background-color: #e74c3c; 			/* Fondo Rojo */
+      color: #f1c40f;          				/* Texto Amarillo */
+    }
+  </style>
+</head>
+<body>
+
+  <p>Pasa el ratón por encima de la caja para iniciar la transición (y retíralo para que regrese):</p>
+
+  <!-- Elemento transicionado -->
+  <div class="caja">
+    Pásame el ratón
+  </div>
+
+</body>
+</html>
