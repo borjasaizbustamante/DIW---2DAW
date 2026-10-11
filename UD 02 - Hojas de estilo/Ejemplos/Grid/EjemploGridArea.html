@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid Básico</title>
+    <style>
+        /* 1. Asignar un nombre de área a cada hijo mediante 'grid-area' */
+        .header { grid-area: mi-header; background-color: #4a90e2; }
+        .nav    { grid-area: mi-nav;    background-color: #50e3c2; }
+        .main   { grid-area: mi-main;   background-color: #f5a623; }
+        .aside  { grid-area: mi-aside;  background-color: #b8e986; }
+        .footer { grid-area: mi-footer; background-color: #9013fe; }
+
+        /* Estilos de prueba para los hijos */
+        .layout > * {
+            padding: 1rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* 2. Definir la rejilla y el mapa visual en el padre */
+        .layout {
+            display: grid;
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            gap: 10px;
+            
+            /* Definimos 3 columnas y 3 filas */
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 80px 1fr 60px;
+
+            /* Dibujamos el mapa con grid-template-areas */
+            grid-template-areas:
+                "mi-header mi-header mi-header"
+                "mi-nav    mi-main   mi-aside"
+                "mi-footer mi-footer mi-footer";
+        }
+    </style>
+
+    </head>
+<body>
+
+    <div class="layout">
+        <header class="header">Cabecera / Logo</header>
+        <nav class="nav">Navegación</nav>
+        <main class="main">Contenido Principal</main>
+        <aside class="aside">Barra Lateral (Widgets)</aside>
+        <footer class="footer">Pie de Página</footer>
+    </div>
+
+</body>
+</html>

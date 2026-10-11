@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid Básico</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* Crea 3 columnas: la 1ª de 200px, la 2ª y 3ª se reparten el espacio sobrante por igual */
+            grid-template-columns: 200px 1fr 1fr;
+            
+            /* Altura fija para las filas creadas */
+            grid-template-rows: 100px 100px;
+
+            /* Separación entre celdas */
+            gap: 15px;
+        }
+    </style>
+
+    </head>
+<body>
+
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+</body>
+</html>

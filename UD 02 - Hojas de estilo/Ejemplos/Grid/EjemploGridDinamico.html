@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid Básico</title>
+    <style>
+        .galeria-productos {
+            display: grid;
+            /* Crea tantas columnas de mínimo 280px como quepan; si la pantalla se encoge, saltan de fila */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tarjeta {
+            background-color: #f4f4f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+        }
+    </style>
+
+    </head>
+<body>
+
+    <div class="galeria-productos">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+</body>
+</html>
